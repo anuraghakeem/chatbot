@@ -1,6 +1,6 @@
 import {ApiAiClient} from 'api-ai-javascript';
 import {applyMiddleware,createStore} from 'redux';
-const accessToken='9119dea946d345a1b345d562ef1ab26c';
+const accessToken='';
 const client=new ApiAiClient({accessToken});
 
 const ON_MESSAGE='ON_MESSAGE';
@@ -20,7 +20,7 @@ if(action.type===ON_MESSAGE){
     }
 }
 }
-const initState =[{text:'hey'}];
+const initState =[{text:'Welcome to safe space with askQ'}];
 const messageReducer=(state=initState,action)=>{
     switch(action.type){
         case ON_MESSAGE:
